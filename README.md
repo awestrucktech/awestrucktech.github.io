@@ -52,4 +52,6 @@ of app). Before linking them from Play Console, double-check against your actual
 - The permissions table in each policy matches what's declared in each app's `AndroidManifest.xml`.
 - Whether any app uses analytics/crash tools beyond AdMob (e.g. Firebase Analytics, Crashlytics) —
   if so, add a line under "Advertising" / a new "Analytics" section naming them.
-- FinBud's account/sync description matches how Google Sign-In and cloud sync actually work in the app.
+- FinBud's policy states it is fully offline with no data collection, no ads, and no sign-in —
+  confirm the shipped app has no hidden SDK (analytics, crash reporting, ads) before publishing,
+  since that claim needs to stay true for the policy to remain accurate.
