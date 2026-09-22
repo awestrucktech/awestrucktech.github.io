@@ -21,18 +21,8 @@ assets/                    css/js/img shared by every page
 
 ## Deploying to GitHub Pages
 
-1. Create a repo named exactly `awestrucktech.github.io` under the `awestrucktech` GitHub account
-   (a user/org site repo — this is what makes the site serve from the domain root, which AdMob
-   requires for `app-ads.txt`).
-2. Push this folder's contents to the `main` branch.
-3. In the repo Settings → Pages, set Source to "Deploy from a branch" → `main` / `root`
-   (GitHub usually auto-detects this for a `<username>.github.io` repo).
-4. Wait a few minutes, then confirm:
-   - https://awestrucktech.github.io/ loads the homepage
-   - https://awestrucktech.github.io/app-ads.txt returns the raw text file
-5. In each app's Play Console listing, set the **Privacy Policy URL** to its page under `/privacy/`.
-6. In AdMob, make sure each app's linked website matches `https://awestrucktech.github.io/`
-   so Google can crawl `app-ads.txt` at the root.
+See [PUBLISHING.md](PUBLISHING.md) for the full step-by-step: creating the repo, pushing,
+enabling Pages, verifying the live URLs, and linking privacy policies from Play Console.
 
 ## Adding a new app
 
