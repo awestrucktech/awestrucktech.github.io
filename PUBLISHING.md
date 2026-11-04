@@ -55,6 +55,7 @@ Once live, check each of these load correctly:
 - `https://awestrucktech.github.io/privacy/malayalam-radio.html`
 - `https://awestrucktech.github.io/privacy/hindi-radio.html`
 - `https://awestrucktech.github.io/privacy/tamil-radio.html`
+- `https://awestrucktech.github.io/privacy/australia-radio.html`
 - `https://awestrucktech.github.io/privacy/finbud.html`
 - `https://awestrucktech.github.io/terms/`
 
