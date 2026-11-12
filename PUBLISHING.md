@@ -57,6 +57,7 @@ Once live, check each of these load correctly:
 - `https://awestrucktech.github.io/privacy/tamil-radio.html`
 - `https://awestrucktech.github.io/privacy/australia-radio.html`
 - `https://awestrucktech.github.io/privacy/finbud.html`
+- `https://awestrucktech.github.io/privacy/octiva.html`
 - `https://awestrucktech.github.io/terms/`
 
 If a page 404s, double-check the file was actually pushed (`git log --stat`) and that
