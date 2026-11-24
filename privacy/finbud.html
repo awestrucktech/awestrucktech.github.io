@@ -33,41 +33,71 @@
     <div class="wrap">
       <a href="/privacy/" class="back-link">← All privacy policies</a>
       <article class="prose">
-        <p class="meta">Effective date: September 22, 2026 · Last updated: September 22, 2026</p>
+        <p class="meta">Effective date: September 22, 2026 · Last updated: November 25, 2026</p>
         <h1>Privacy Policy — FinBud</h1>
         <p>Package name: <code>com.finbud</code> ·
           <a href="https://play.google.com/store/apps/details?id=com.finbud" target="_blank" rel="noopener">View on Google Play</a>
         </p>
 
-        <p>Awestruck Tech ("we", "us", "our") developed FinBud ("the App"), a personal finance manager, expense tracker, and budgeting tool. FinBud is designed to work <strong>entirely offline</strong> and does not collect, store, or transmit any personal or financial data to us or to any third party. This page explains exactly what that means.</p>
+        <p>Awestruck Tech ("we", "us", "our") developed FinBud ("the App"), a personal finance manager, expense tracker, and budgeting tool. FinBud is designed to work <strong>entirely offline</strong>. It does not collect, receive, or transmit any personal or financial data to us or to any third party. This page explains exactly what that means, what the App stores on your device, and the few actions where you choose to move your own data elsewhere.</p>
 
         <h2>1. No Data Collection</h2>
         <p>FinBud does not collect any personal information. Specifically, the App:</p>
         <ul>
           <li>Does <strong>not</strong> require or offer any account creation or sign-in (no Google Sign-In or any other login).</li>
-          <li>Does <strong>not</strong> connect to the internet to transmit your data anywhere — all features work fully offline.</li>
+          <li>Does <strong>not</strong> have internet access. The release app does not include the Android internet permission, so it cannot send your data anywhere on its own.</li>
           <li>Does <strong>not</strong> display ads, and does not include any advertising SDK.</li>
           <li>Does <strong>not</strong> use analytics, crash-reporting, or tracking tools of any kind.</li>
           <li>Does <strong>not</strong> connect to your bank accounts, cards, or financial institutions, and never asks for bank login credentials.</li>
+          <li>Does <strong>not</strong> read your SMS inbox. It only processes a message or screenshot that you choose to share into the App.</li>
           <li>Does <strong>not</strong> share, sell, or transmit any data to us, to Awestruck Tech, or to any third party.</li>
         </ul>
 
-        <h2>2. Your Data Stays On Your Device</h2>
-        <p>All information you enter into FinBud — transactions, amounts, dates, descriptions, categories, and budgets — is stored only in local storage on your own device. We never receive a copy of it, and we have no way to access, view, or recover it. If you uninstall the App or clear its storage, this data is permanently deleted and cannot be restored by us, since we never had it.</p>
+        <h2>2. What Is Stored on Your Device</h2>
+        <p>Everything you enter into FinBud is stored only in the App's private storage on your device. This includes:</p>
+        <ul>
+          <li>Transactions, amounts, dates, descriptions, categories, accounts, budgets, bills, and recurring payments.</li>
+          <li>Names of people you add in the App, and payment handles you save for them.</li>
+          <li>Receipt photos you attach, and bank-message text or payment screenshots you share into the App.</li>
+          <li>Your settings. If you set an app passcode, only a salted, one-way hash of it is stored, never the passcode itself.</li>
+        </ul>
+        <p>This data is protected by Android's app sandbox and your device's own encryption. FinBud does not add a separate layer of encryption to its database, so we recommend using a screen lock on your device. You can also turn on FinBud's app lock (passcode or biometric unlock) and its option to block screenshots of the App. We never receive a copy of any of this data, and we have no way to access, view, or recover it.</p>
 
-        <h2>3. Permissions</h2>
-        <p>FinBud does not request any special device permissions beyond what's needed to run as a standard offline Android app. It does not request internet access, storage/media access beyond its own app sandbox, location, contacts, or any other sensitive permission.</p>
+        <h2>3. Actions Where You Choose to Move Your Data</h2>
+        <p>FinBud only moves your data off its private storage when you ask it to:</p>
+        <ul>
+          <li><strong>Reading shared messages and screenshots.</strong> When you share a bank SMS or a payment screenshot to FinBud, it reads the text on your device using a text-recognition (OCR) model built into the App. Nothing is uploaded.</li>
+          <li><strong>Backups.</strong> Backups are saved as unencrypted JSON files in your device's public <em>Download/BACKUP FinBud</em> folder. Other apps with file access on your device can read them. They stay on your device even after you uninstall FinBud, so you can restore them later. Automatic backups are off unless you turn them on.</li>
+          <li><strong>Export and sharing.</strong> CSV and PDF exports are saved where you choose, or handed to the app you pick in Android's share sheet.</li>
+          <li><strong>Text-recognition feedback.</strong> If you choose to report a misread transaction, FinBud prepares the recognised text, never the screenshot, for you to send by email or another app. Nothing is sent unless you send it.</li>
+          <li><strong>Payment links.</strong> If you tap a pay button (for example UPI, PayPal, Venmo, Cash App, or Revolut), FinBud opens that app with the amount and the payee handle you entered. That app's own privacy policy then applies.</li>
+          <li><strong>Home-screen widgets and notifications.</strong> If you add a FinBud widget, it shows figures such as your balance or budget progress on your home screen. Reminders and budget alerts may show amounts in notifications and on the lock screen. You control both from your launcher and notification settings.</li>
+        </ul>
 
-        <h2>4. Children's Privacy</h2>
+        <h2>4. Android Device Backup</h2>
+        <p>If Google backup is turned on for your device, Android may include FinBud's app data in your device's backup to your Google account. This backup is handled by Google under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>, and we cannot access it. You can turn device backup off in <em>Settings → Google → Backup</em> (or <em>Settings → System → Backup</em>).</p>
+
+        <h2>5. Permissions</h2>
+        <table>
+          <tr><th>Permission</th><th>Purpose</th></tr>
+          <tr><td>Notifications</td><td>Bill and card-due reminders, recurring-payment reminders, budget alerts, and messages about transactions you shared in.</td></tr>
+          <tr><td>Run at startup</td><td>Reschedule your reminders after the device restarts.</td></tr>
+          <tr><td>Biometric / fingerprint</td><td>Optional app unlock. Android handles the check; FinBud never receives your fingerprint or face data.</td></tr>
+          <tr><td>Storage (Android 12L and below only)</td><td>Save backups and exports to your Download folder on older Android versions. Newer versions do not need this permission.</td></tr>
+          <tr><td>Vibrate, wake lock &amp; foreground service</td><td>Added by system libraries so reminders and backups run reliably.</td></tr>
+        </table>
+        <p>FinBud does not request internet access, SMS access, contacts, location, camera, or microphone. Exact permissions can vary by Android version; you can review and revoke them in your device's App settings.</p>
+
+        <h2>6. Children's Privacy</h2>
         <p>Because FinBud collects no information from any user, it does not knowingly or unknowingly collect personal information from children under 13 or any other age group.</p>
 
-        <h2>5. Your Data, Your Control</h2>
-        <p>Since all data lives only on your device, you are always in full control of it. You can view, edit, or delete any entry directly within the App, or remove all data at once by uninstalling the App.</p>
+        <h2>7. Your Data, Your Control</h2>
+        <p>Since all data lives only on your device, you are always in full control of it. You can view, edit, or delete any entry directly within the App. Uninstalling the App or clearing its storage permanently deletes its private data. We cannot restore it, because we never had it. Backup and export files you saved to your Download folder or elsewhere are not removed by uninstalling; delete them yourself with a file manager if you no longer want them.</p>
 
-        <h2>6. Changes to This Policy</h2>
+        <h2>8. Changes to This Policy</h2>
         <p>If FinBud's data practices ever change (for example, if a future version adds an optional online feature), we will update this policy first and reflect that change with a new "Last updated" date before the change takes effect.</p>
 
-        <h2>7. Contact Us</h2>
+        <h2>9. Contact Us</h2>
         <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:awestrucktech@gmail.com">awestrucktech@gmail.com</a>.</p>
       </article>
     </div>

@@ -33,7 +33,7 @@
     <div class="wrap">
       <a href="/privacy/" class="back-link">← All privacy policies</a>
       <article class="prose">
-        <p class="meta">Effective date: September 22, 2026 · Last updated: September 22, 2026</p>
+        <p class="meta">Effective date: September 22, 2026 · Last updated: November 25, 2026</p>
         <h1>Privacy Policy — Tamil Vanoli: Tamil FM Radio</h1>
         <p>Package name: <code>com.tamilfmradio.tamilvanoli</code> ·
           <a href="https://play.google.com/store/apps/details?id=com.tamilfmradio.tamilvanoli" target="_blank" rel="noopener">View on Google Play</a>
@@ -43,51 +43,92 @@
 
         <h2>1. Information We Collect</h2>
         <h3>Information you provide</h3>
-        <p>The App does not require account registration. If you mark stations as favorites, that data is stored locally on your device.</p>
+        <p>The App has no accounts, sign-in, or registration, and we do not collect personal information such as your name, email address, or phone number. Your favourite stations (with the date you added them), your last few recently played stations, your theme choice and other settings are stored only on your device.</p>
         <h3>Information collected automatically</h3>
+        <p>The App uses the following third-party services, which collect data automatically:</p>
         <ul>
-          <li><strong>Device and app information</strong> — device model, operating system version, app version, language, and crash/diagnostic logs, used to keep the App stable.</li>
-          <li><strong>Advertising identifier (Google Advertising ID)</strong> — used by our ad partner to serve and measure ads, and to limit how often you see the same ad.</li>
-          <li><strong>Approximate location</strong> — derived from your IP address, used only for regional ad relevance, not for precise tracking.</li>
-          <li><strong>Listening activity</strong> — stations you search for, favorite, or play, used to power core features such as "now playing" info and favorites.</li>
+          <li><strong>Google Analytics for Firebase</strong> (usage analytics).</li>
+          <li><strong>Firebase Crashlytics</strong> (crash reporting).</li>
+          <li><strong>Firebase Remote Config</strong> (remote settings).</li>
+          <li><strong>Google AdMob</strong> with its <strong>Meta Audience Network</strong> mediation partner (advertising).</li>
+        </ul>
+        <p>Together they may collect:</p>
+        <ul>
+          <li><strong>Identifiers</strong>: the Google Advertising ID and other device identifiers, plus a random app-instance ID and installation ID created by Firebase. They are used to serve and measure ads, count users, limit ad repetition, and prevent fraud.</li>
+          <li><strong>Listening and in-app activity</strong>: the stations you play, favourite or unfavourite (including the station name). It also covers how long you listen (with a periodic signal while audio plays), whether the screen was on or off, and how playback started and ended (for example from the widget, Android Auto or Bluetooth). It includes screens you view, settings you change, sleep-timer use, and when you search, the length of your search and how many results it returned. Your search text itself is not sent. Your theme preferences and app version are also recorded.</li>
+          <li><strong>Playback reliability data</strong>: stream errors, HTTP status codes, retries, recovery time, and your network type (Wi-Fi or mobile data).</li>
+          <li><strong>Ad measurement data</strong>: ad requests, fills, impressions, taps and the estimated revenue from each ad, along with whether the App was in the foreground and whether audio was playing.</li>
+          <li><strong>Crash and diagnostic data</strong>: crash reports and error logs, which may include the name of the station that was playing when the error occurred. Also included are device model, operating system version, app version, language and network state.</li>
+          <li><strong>Approximate location</strong>: derived from your IP address, used for regional statistics and ad relevance, not precise tracking.</li>
+          <li><strong>Install source</strong>: how the App was installed (for example from Google Play), via the Play Install Referrer service.</li>
+        </ul>
+        <p>This data is not linked to your name, email address or phone number. We use it in aggregate to understand which stations and features people use, fix crashes and playback problems, and tune how often ads appear.</p>
+
+        <h2>2. Station Directory</h2>
+        <p>The station list is loaded from the open, community-maintained <a href="https://www.radio-browser.info/" target="_blank" rel="noopener">Radio Browser</a> directory, filtered to Tamil-language stations and cached on your device for about a day. Station logos are loaded from the web addresses each station publishes. When the App fetches the list or logos, those servers receive standard request information such as your IP address. No personal information or listening history is sent to the directory.</p>
+
+        <h2>3. Radio Streams &amp; Third-Party Broadcasters</h2>
+        <p>The App streams live audio from independently operated Tamil FM and internet radio stations located in India, Sri Lanka, Malaysia, Singapore, the UK, Canada, and elsewhere by connecting directly to each station's publicly available streaming server. Song and show titles shown in the App come from information inside the station's own stream. Those servers are run by the broadcasters themselves and can see standard connection information such as your IP address. To hide stations that are offline, the App also briefly checks station streams in the background about once a day. Some stations only offer unencrypted (HTTP) streams. We do not host or record this audio, and each broadcaster's own privacy practices apply to the stream itself; we are not responsible for their data practices. The App is not affiliated with or endorsed by any radio station or broadcaster.</p>
+
+        <h2>4. Advertising</h2>
+        <p>The App displays ads served through <strong>Google AdMob</strong>, with <strong>Meta Audience Network</strong> taking part as a mediation (bidding) partner. Ad formats include:</p>
+        <ul>
+          <li>Banners on the Home, Now Playing and Search screens.</li>
+          <li>Native ads that appear among stations.</li>
+          <li>Occasional full-screen ads when you open the App or return to it after a while, or finish with a screen.</li>
+        </ul>
+        <p>Full-screen ads are not shown during your first day with the App or while audio is playing, and are limited per day. We adjust these limits remotely using Firebase Remote Config.</p>
+        <p>AdMob, Meta, and their partners may use the advertising identifier and other technical data to show relevant ads and measure ad performance. On supported Android versions, the ads SDK may also use Android's Privacy Sandbox features (Topics and Attribution Reporting).</p>
+        <p>Where required (for example in the European Economic Area, the United Kingdom and Switzerland, and for certain US states), the App first shows Google's consent form (User Messaging Platform) and requests ads only as your choice allows. Where this applies, you can change your choice at any time from <em>Settings → Ad privacy choices</em> in the App. You can also opt out of personalized advertising, manage ad topics, or reset or delete your advertising ID from your device's <em>Settings → Google → Ads</em> (or <em>Settings → Privacy → Ads</em>) menu. For more information, see <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">how Google uses information from apps that use its services</a> and <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta's Privacy Policy</a>.</p>
+
+        <h2>5. Other Features</h2>
+        <ul>
+          <li><strong>Android Auto, the home-screen widget and the Quick Settings tile</strong> let you play stations without opening the App. Pressing play on Bluetooth headphones or the notification can resume your last station.</li>
+          <li><strong>Sleep timer</strong> stops playback after the time you choose.</li>
+          <li><strong>Share and rate</strong> hand a Play Store link to the app you choose, or open the App's Google Play listing.</li>
         </ul>
 
-        <h2>2. Radio Streams &amp; Third-Party Broadcasters</h2>
-        <p>The App streams live audio from independently operated Tamil FM stations located in India, Sri Lanka, Malaysia, Singapore, the UK, Canada, and elsewhere, by connecting directly to each station's publicly available streaming server. We do not host or record this audio, and each broadcaster's own privacy practices apply to the stream itself; we are not responsible for their data practices.</p>
-
-        <h2>3. Advertising</h2>
-        <p>The App displays ads served through <strong>Google AdMob</strong>. AdMob and its partners may use the advertising identifier and other technical data to show relevant ads and measure ad performance. You can opt out of personalized advertising or reset your advertising ID from your device's <em>Settings → Google → Ads</em> menu. For more information, see <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's Advertising Policy</a>.</p>
-
-        <h2>4. Permissions This App May Request</h2>
+        <h2>6. Permissions This App May Request</h2>
         <table>
           <tr><th>Permission</th><th>Purpose</th></tr>
-          <tr><td>Internet / Network state</td><td>Stream live radio audio, load station lists and "now playing" info, and serve ads.</td></tr>
-          <tr><td>Foreground service &amp; wake lock</td><td>Keep audio playing reliably while the app is in the background or the screen is off.</td></tr>
-          <tr><td>Notifications</td><td>Show playback controls in the notification shade while a station is playing.</td></tr>
+          <tr><td>Internet / Network state</td><td>Load the station list and logos, stream live radio audio, send analytics and crash reports, and serve ads.</td></tr>
+          <tr><td>Foreground service (media playback) &amp; wake lock</td><td>Keep the station you started playing while the App is in the background or the screen is off.</td></tr>
+          <tr><td>Notifications</td><td>Show playback controls on the lock screen and in the notification shade while a station is playing.</td></tr>
+          <tr><td>Bluetooth (Android 11 and below)</td><td>Work with Bluetooth headphones, speakers, and car audio controls.</td></tr>
+          <tr><td>Advertising ID &amp; ad services (Topics, Attribution)</td><td>Added by the AdMob, Meta Audience Network and Firebase SDKs to serve and measure ads and app usage.</td></tr>
+          <tr><td>Install referrer</td><td>Added by Firebase Analytics to record how the App was installed.</td></tr>
         </table>
-        <p>The exact permissions requested may vary by Android version and app update; you can review and revoke them at any time in your device's App Settings.</p>
+        <p>The App does not request storage, contacts, location, camera, or microphone permissions. The exact permissions may vary by Android version and app update; you can review and revoke them at any time in your device's App Settings.</p>
 
-        <h2>5. How We Use Information</h2>
+        <h2>7. How We Use Information</h2>
         <ul>
-          <li>To operate core features (station search, playback, favorites, now-playing info, light/dark theme).</li>
-          <li>To diagnose crashes and improve app stability and performance.</li>
-          <li>To serve and measure advertising that supports the free version of the App.</li>
+          <li>To operate core features (station browsing and search, playback, favourites, recently played, sleep timer, widget, Android Auto, sharing, light/dark theme).</li>
+          <li>To understand how the App is used and which stations are popular, so we can improve it (Firebase Analytics).</li>
+          <li>To find and fix crashes and playback errors (Firebase Crashlytics).</li>
+          <li>To serve and measure advertising that keeps the App free, and to adjust ad frequency (AdMob, Meta Audience Network, Firebase Remote Config).</li>
         </ul>
         <p>We do not sell your personal information.</p>
 
-        <h2>6. Data Storage &amp; Security</h2>
-        <p>Your favorites and preferences are stored locally on your device. We take reasonable technical and organizational measures to protect any data processed by the App, but no method of transmission or storage is completely secure.</p>
+        <h2>8. Data Storage, Retention &amp; Security</h2>
+        <p>Your favourites, recently played stations, settings, and the cached station list are stored locally on your device and are removed when you clear the App's data or uninstall it. The App's data is excluded from Android cloud backup. We do not operate servers that store your data. Analytics and crash data are processed and stored by Google (Firebase) on our behalf and kept according to Firebase's retention settings. We see this data only as aggregated reports and individual crash reports, and it does not include your name or contact details. Data sent to Google and Meta is transmitted over encrypted connections and handled under their respective privacy policies: the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> (see also <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>) and <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta's Privacy Policy</a>.</p>
 
-        <h2>7. Children's Privacy</h2>
-        <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can remove it.</p>
+        <h2>9. Children's Privacy</h2>
+        <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children under 13. Live radio is unfiltered, third-party content. If you believe a child has provided us with personal information, please contact us so we can remove it.</p>
 
-        <h2>8. Your Rights &amp; Choices</h2>
-        <p>Depending on where you live, you may have the right to access, correct, delete, or restrict the use of your personal information, and to opt out of personalized advertising. You can exercise most of these rights directly from your device settings, or by contacting us using the details below.</p>
+        <h2>10. Your Rights &amp; Choices</h2>
+        <p>Depending on where you live (including under India's Digital Personal Data Protection Act, 2023 and the GDPR), you may have the right to access, correct, delete, or restrict the use of your personal information, and to opt out of personalized advertising. Because the App has no accounts, the data described above is tied only to random identifiers, not to your identity. You can:</p>
+        <ul>
+          <li>Change your ad consent in the App's settings, where offered.</li>
+          <li>Reset or delete your advertising ID in your device settings.</li>
+          <li>Clear the App's data or reinstall it, which also resets the Firebase app-instance ID and starts a new, unlinked history.</li>
+          <li>Revoke notification permission.</li>
+        </ul>
+        <p>For data held by Google, use <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">Google My Ad Center</a>. You can also contact us using the details below.</p>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Material changes will be reflected by an updated "Last updated" date on this page. Continued use of the App after changes take effect constitutes acceptance of the revised policy.</p>
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time, for example when we add features or change the services the App uses. Material changes will be reflected by an updated "Last updated" date on this page. Continued use of the App after changes take effect constitutes acceptance of the revised policy.</p>
 
-        <h2>10. Contact Us</h2>
+        <h2>12. Contact Us</h2>
         <p>If you have questions about this Privacy Policy or how your data is handled, contact us at <a href="mailto:awestrucktech@gmail.com">awestrucktech@gmail.com</a>.</p>
       </article>
     </div>
